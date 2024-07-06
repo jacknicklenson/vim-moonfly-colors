@@ -673,16 +673,35 @@ function! moonfly#Style() abort
     "-----------------------------------------------------------------------
 
     " Coc
-    highlight! link CocSemTypeBuiltin MoonflyCranberry
-    highlight! link CocSemTypeClass MoonflyEmerald
-    highlight! link CocSemTypeEnumMember MoonflyTurquoise
-    highlight! link CocSemTypeNamespace MoonflyTurquoise
-    highlight! link CocSemTypeParameter MoonflyOrchid
-    highlight! link CocSemTypeProperty MoonflyLavender
-    highlight! link CocSemTypeRegexp MoonflyTurquoise
-    highlight! link CocSemTypeStruct MoonflyEmerald
-    highlight! link CocSemTypeTypeParameter MoonflyOrchid
-    highlight! link CocUnusedHighlight MoonflyGrey70
+
+    hi! link CocSemModDeprecated	 MoonflyGrey0
+    hi! link CocSemTypeBuiltin   	 MoonflyCranberry
+    hi! link CocUnusedHighlight      MoonflyGrey70
+    hi! link CocSemTypeComment	 MoonflyGrey27
+    hi! link CocSemTypeDecorator     MoonflyOrange
+    hi! link CocSemTypeClass         MoonflyEmerald
+    hi! link CocSemTypeEnum          MoonflyEmerald
+    hi! link CocSemTypeStruct        MoonflyEmerald
+    hi! link CocSemTypeEnumMember    MoonflyPurple
+    hi! link CocSemTypeInterface     MoonflyViolet
+    hi! link CocSemTypeKeyword       MoonflyRed
+    hi! link CocSemTypeMacro         MoonflyCrimson
+    hi! link CocSemTypeMethod        MoonflySky
+    hi! link CocSemTypeFunction      MoonflySky
+    hi! link CocSemTypeModifier      MoonflyYellow
+    hi! link CocSemTypeType		 MoonflyTurquoise
+    hi! link CocSemTypeTypeParameter MoonflyCoral
+    hi! link CocSemTypeVariable	 MoonflyWhite
+    hi! link CocSemTypeNamespace	 MoonflyLime
+    hi! link CocSemTypeProperty	 MoonflyLavender
+    hi! link CocSemTypeParameter     MoonflyOrchid
+    hi! link CocSemTypeOperator      MoonflyBlue
+    hi! link CocSemTypeNumber	 MoonflyGreen
+    hi! link CocSemTypeString	 MoonflyKhaki
+    hi! link CocSemTypeRegexp	 MoonflyTurquoise
+    hi CocSemTypeBoolean   	 guifg=#FF0000
+    hi CocSemTypeEvent	 guifg=#1E4F0A
+    hi Cursor		 guibg=#F7A41D
     exec 'highlight CocInlayHint guibg=' . s:grey11 . ' guifg=' . s:grey58
 
     " Git commits
